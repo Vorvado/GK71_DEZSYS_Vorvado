@@ -3,6 +3,7 @@ package com.example.floodmonitor.controller;
 import com.example.floodmonitor.model.Station;
 import com.example.floodmonitor.service.SimulationService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,4 +23,10 @@ public class StationController {
     public List<Station> getStations() {
         return simulationService.generateStations();
     }
+
+    @GetMapping("/stations/{id}")
+    public Station getStation(@PathVariable int id){return simulationService.generateStation(id);}
+
+    @GetMapping("/stations/count")
+    public int getCount(){return simulationService.getCount();}
 }

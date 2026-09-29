@@ -63,12 +63,12 @@ Expected response (JSON array of stations):
 ## Next Tasks
 
 ### Tasks 1
-- [ ] Run the application and verify the `/api/v1/stations` endpoint works.
-- [ ] Add a new field `waterFlow` (double) to the `Station` model. Verify the new field appears in the JSON response.
-- [ ] Add a new endpoint `GET /api/v1/stations/{id}` that returns a single station by its ID.
+- [x] Run the application and verify the `/api/v1/stations` endpoint works.
+- [x] Add a new field `waterFlow` (double) to the `Station` model. Verify the new field appears in the JSON response.
+- [x] Add a new endpoint `GET /api/v1/stations/{id}` that returns a single station by its ID.
 
 ### Tasks 2
-- [ ] Add a `GET /api/v1/stations/count` endpoint that returns the number of stations as a plain integer.
+- [x] Add a `GET /api/v1/stations/count` endpoint that returns the number of stations as a plain integer.
 - [ ] Return an appropriate HTTP status code (`404 Not Found`) when a station with the given ID does not exist.
 - [ ] Add a `POST /api/v1/stations` endpoint that accepts a JSON body and adds a new station to the (in-memory) list.
 
