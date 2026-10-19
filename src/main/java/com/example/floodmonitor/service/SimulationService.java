@@ -18,42 +18,48 @@ public class SimulationService {
     };
 
     private final Random random = new Random();
+    private final List<Station> stations = new ArrayList<>();
+    private int nextStationId = STATION_NAMES.length + 1;
+
+    public SimulationService() {
+        for (int i = 0; i < STATION_NAMES.length; i++) {
+            stations.add(createStation(String.valueOf(i + 1), STATION_NAMES[i]));
+        }
+    }
 
     public List<Station> generateStations() {
-        List<Station> stations = new ArrayList<>();
-        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
-
-        for (int i = 0; i < STATION_NAMES.length; i++) {
-            Station station = new Station();
-            station.setId(String.valueOf(i + 1));
-            station.setStationName(STATION_NAMES[i]);
-            station.setTimestamp(timestamp);
-            station.setWaterLevel(Math.round((0.5 + random.nextDouble() * 4.5) * 100.0) / 100.0);
-            station.setWaterTemperature(Math.round((4.0 + random.nextDouble() * 16.0) * 10.0) / 10.0);
-            station.setWaterflow(Math.round((random.nextDouble() * 25) * 10.0) / 10.0);
-            station.setUnit("m");
-            stations.add(station);
-        }
-
         return stations;
     }
 
     public Station generateStation(int stationNum) {
-        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+        String id = String.valueOf(stationNum);
+        return stations.stream()
+            .filter(station -> station.getId().equals(id))
+            .findFirst()
+            .orElse(null);
+    }
 
-            Station station = new Station();
-            station.setId(String.valueOf(stationNum));
-            station.setStationName(STATION_NAMES[stationNum-1]);
-            station.setTimestamp(timestamp);
-            station.setWaterLevel(Math.round((0.5 + random.nextDouble() * 4.5) * 100.0) / 100.0);
-            station.setWaterTemperature(Math.round((4.0 + random.nextDouble() * 16.0) * 10.0) / 10.0);
-            station.setWaterflow(Math.round((random.nextDouble() * 25) * 10.0) / 10.0);
-            station.setUnit("m");
-
+    public Station addStation(Station station) {
+        station.setId(String.valueOf(nextStationId++));
+        stations.add(station);
         return station;
     }
 
-    public int getCount(){
-        return STATION_NAMES.length;
+    public int getCount() {
+        return stations.size();
+    }
+
+    private Station createStation(String id, String stationName) {
+        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+
+        Station station = new Station();
+        station.setId(id);
+        station.setStationName(stationName);
+        station.setTimestamp(timestamp);
+        station.setWaterLevel(Math.round((0.5 + random.nextDouble() * 4.5) * 100.0) / 100.0);
+        station.setWaterTemperature(Math.round((4.0 + random.nextDouble() * 16.0) * 10.0) / 10.0);
+        station.setWaterflow(Math.round((random.nextDouble() * 25) * 10.0) / 10.0);
+        station.setUnit("m");
+        return station;
     }
 }

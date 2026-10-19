@@ -1,4 +1,4 @@
-# Flood Monitor REST API – Starter Project
+ü# Flood Monitor REST API – Starter Project
 
 ## Learning Objectives
 
@@ -69,10 +69,9 @@ Expected response (JSON array of stations):
 
 ### Tasks 2
 - [x] Add a `GET /api/v1/stations/count` endpoint that returns the number of stations as a plain integer.
-- [ ] Return an appropriate HTTP status code (`404 Not Found`) when a station with the given ID does not exist.
-- [ ] Add a `POST /api/v1/stations` endpoint that accepts a JSON body and adds a new station to the (in-memory) list.
+- [x] Return an appropriate HTTP status code (`404 Not Found`) when a station with the given ID does not exist.
+- [x] Add a `POST /api/v1/stations` endpoint that accepts a JSON body and adds a new station to the (in-memory) list.
 
 ### Tasks 3
 - [ ] Add XML support: return XML instead of JSON when the client sends `Accept: application/xml`.
 - [ ] Integrate **Springdoc OpenAPI** (Swagger UI) to document your API.
-
