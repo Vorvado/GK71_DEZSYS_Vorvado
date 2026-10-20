@@ -75,3 +75,8 @@ Expected response (JSON array of stations):
 ### Tasks 3
 - [x] Add XML support: return XML instead of JSON when the client sends `Accept: application/xml`.
 - [x] Integrate **Springdoc OpenAPI** (Swagger UI) to document your API.
+
+### Task 4
+- [ ] Fehler Abfangen und eigene Error Seite anzeigen
+- [x] Web-Frontend erstellen/prompten
+- [x] Fragestellungen
