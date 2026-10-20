@@ -1,6 +1,7 @@
 package com.example.floodmonitor.service;
 
 import com.example.floodmonitor.model.Station;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -49,17 +50,27 @@ public class SimulationService {
         return stations.size();
     }
 
-    private Station createStation(String id, String stationName) {
-        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+    @Scheduled(fixedRate = 1000)
+    public void updateStations() {
+        for (Station station : stations) {
+            updateStationValues(station);
+        }
+    }
 
+    private Station createStation(String id, String stationName) {
         Station station = new Station();
         station.setId(id);
         station.setStationName(stationName);
+        updateStationValues(station);
+        station.setUnit("m");
+        return station;
+    }
+
+    private void updateStationValues(Station station) {
+        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
         station.setTimestamp(timestamp);
         station.setWaterLevel(Math.round((0.5 + random.nextDouble() * 4.5) * 100.0) / 100.0);
         station.setWaterTemperature(Math.round((4.0 + random.nextDouble() * 16.0) * 10.0) / 10.0);
         station.setWaterflow(Math.round((random.nextDouble() * 25) * 10.0) / 10.0);
-        station.setUnit("m");
-        return station;
     }
 }

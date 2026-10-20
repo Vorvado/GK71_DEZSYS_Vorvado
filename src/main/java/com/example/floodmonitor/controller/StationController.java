@@ -51,5 +51,4 @@ public class StationController {
                 .toUri())
             .body(createdStation);
     }
-
 }
