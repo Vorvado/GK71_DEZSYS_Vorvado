@@ -5,68 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce1b7660-faae-41aa-ae97-1764ec9db97f" name="Changes" comment="Finally added correct 404 Error message when requesting a not existing station.&#10;Added a POST endpoint that receives a new station in JSON and adds it to the list of in mem. Stations.&#10;For this the SimulationService.class had to change quite a lot to accommodate the new changes.&#10;Added a List of stations field and changes the methods to interact with this new field.&#10;Also used a Stream to generate each station.&#10;also simplified the GET for all stations as it now just returns the list.">
-      <change afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.7/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.7/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.7/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/9.7.1/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/9.7.1/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/9.7.1/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/9.7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/9.7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/9.7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/9.7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/GK71_DEZSYS_Floodmonitor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/floodmonitor/FloodMonitorApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/floodmonitor/controller/StationController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/floodmonitor/model/Station.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/floodmonitor/service/SimulationService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/test/com/example/floodmonitor/StationControllerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/libs/floodmonitor-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/libs/floodmonitor-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.floodmonitor.StationControllerTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.example.floodmonitor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resolvedMainClassName" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.floodmonitor.StationControllerTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SimulationService.class.uniqueId1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/StationController.class.uniqueId0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/floodmonitor/StationControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/example/floodmonitor/StationControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/floodmonitor-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/floodmonitor-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/floodmonitor-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/floodmonitor-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.floodmonitor.StationControllerTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.example.floodmonitor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.floodmonitor.StationControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/floodmonitor/controller/StationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/floodmonitor/controller/StationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/floodmonitor/service/SimulationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/floodmonitor/service/SimulationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/floodmonitor/StationControllerTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +81,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -132,59 +103,59 @@
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000000206366" />
-      <entry key="S5" value="1.000053193150045" />
-      <entry key="S10" value="1.0072933634247063" />
-      <entry key="S30" value="1.1940001027543787" />
-      <entry key="S60" value="1.5243498231160586" />
-      <entry key="M2" value="4.66214909073096" />
-      <entry key="M5" value="29.117213851613045" />
-      <entry key="M10" value="65.66923216921474" />
-      <entry key="M15" value="96.03784887567038" />
-      <entry key="M30" value="166.24832151691467" />
-      <entry key="H1" value="241.74239575595766" />
-      <entry key="H2" value="300.38052764089366" />
-      <entry key="H4" value="337.4307648958919" />
-      <entry key="D1" value="373.23399749193663" />
-      <entry key="W1" value="379.87747701654666" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000016478270588" />
+      <entry key="S60" value="1.001815551800043" />
+      <entry key="M2" value="1.0612721012127566" />
+      <entry key="M5" value="2.316926844984817" />
+      <entry key="M10" value="12.933050331390161" />
+      <entry key="M15" value="31.319490343024285" />
+      <entry key="M30" value="94.15397417973642" />
+      <entry key="H1" value="182.58170273927684" />
+      <entry key="H2" value="262.58991050090543" />
+      <entry key="H4" value="317.5080593723668" />
+      <entry key="D1" value="373.4963239284275" />
+      <entry key="W1" value="384.1849593541719" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.883370861434386E-100" />
-      <entry key="S5" value="1.7211339869995349E-40" />
-      <entry key="S10" value="1.3345282711992356E-20" />
-      <entry key="S30" value="3.017705315025484E-7" />
-      <entry key="S60" value="8.052916459042673E-4" />
-      <entry key="M2" value="0.04865366208430209" />
-      <entry key="M5" value="0.7568276098535173" />
-      <entry key="M10" value="2.6385352061426" />
-      <entry key="M15" value="4.746100120300435" />
-      <entry key="M30" value="10.134974612448683" />
-      <entry key="H1" value="16.065591896836292" />
-      <entry key="H2" value="20.675567687288662" />
-      <entry key="H4" value="23.584326130566886" />
-      <entry key="D1" value="26.391566598622298" />
-      <entry key="W1" value="26.912065615347483" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.0959093187341911E-135" />
+      <entry key="S10" value="3.3675011142370756E-68" />
+      <entry key="S30" value="4.1083756921448236E-23" />
+      <entry key="S60" value="9.396148141797187E-12" />
+      <entry key="M2" value="5.255497880721206E-6" />
+      <entry key="M5" value="0.019606329612231906" />
+      <entry key="M10" value="0.42468073422376146" />
+      <entry key="M15" value="1.4043326927799973" />
+      <entry key="M30" value="5.5130155891270585" />
+      <entry key="H1" value="11.84895386127656" />
+      <entry key="H2" value="17.75616130183353" />
+      <entry key="H4" value="21.85593000699367" />
+      <entry key="D1" value="26.05890367426081" />
+      <entry key="W1" value="26.8633412283562" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9330329915368074" />
-      <entry key="MS500" value="0.9862327044933592" />
-      <entry key="S2" value="0.9965402628484188" />
-      <entry key="S5" value="0.9986677708349999" />
-      <entry key="S10" value="1.0065943924882712" />
-      <entry key="S30" value="1.1937154823481022" />
-      <entry key="S60" value="1.524825596439906" />
-      <entry key="M2" value="4.706761936411366" />
-      <entry key="M5" value="29.853464660023327" />
-      <entry key="M10" value="68.27658209389404" />
-      <entry key="M15" value="100.74970405981286" />
-      <entry key="M30" value="176.35058420394026" />
-      <entry key="H1" value="257.783459500023" />
-      <entry key="H2" value="321.0406990676921" />
-      <entry key="H4" value="361.00640839834625" />
-      <entry key="D1" value="399.6239588011541" />
-      <entry key="W1" value="406.78930911588526" />
+      <entry key="MS100" value="0.8179020585577811" />
+      <entry key="MS500" value="0.9605948639534766" />
+      <entry key="S2" value="0.9899997047180724" />
+      <entry key="S5" value="0.9959878167538044" />
+      <entry key="S10" value="0.99799189212829" />
+      <entry key="S30" value="0.9993317885546741" />
+      <entry key="S60" value="1.0014576114455687" />
+      <entry key="M2" value="1.0607258832239665" />
+      <entry key="M5" value="2.3346301992750704" />
+      <entry key="M10" value="13.351287546488333" />
+      <entry key="M15" value="32.71245684961094" />
+      <entry key="M30" value="99.64838486500018" />
+      <entry key="H1" value="194.41209871005688" />
+      <entry key="H2" value="280.33259813602916" />
+      <entry key="H4" value="339.3558126747587" />
+      <entry key="D1" value="399.5536201356107" />
+      <entry key="W1" value="411.0480642705285" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -203,6 +174,7 @@
     "Gradle.GK71_DEZSYS_Floodmonitor [bootRun].executor": "Run",
     "Gradle.GK71_DEZSYS_Floodmonitor [build].executor": "Run",
     "Gradle.StationControllerTest.executor": "Run",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -233,7 +205,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--scan" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -258,7 +230,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--scan" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -348,8 +320,19 @@
       <updated>1790663892762</updated>
       <workItem from="1792433025382" duration="1913000" />
       <workItem from="1792436067486" duration="97000" />
-      <workItem from="1792437178677" duration="3084000" />
+      <workItem from="1792437178677" duration="3521000" />
+      <workItem from="1792441647102" duration="794000" />
+      <workItem from="1792444771525" duration="7000" />
     </task>
+    <task id="LOCAL-00001" summary="Finally added correct 404 Error message when requesting a not existing station.&#10;Added a POST endpoint that receives a new station in JSON and adds it to the list of in mem. Stations.&#10;For this the SimulationService.class had to change quite a lot to accommodate the new changes.&#10;Added a List of stations field and changes the methods to interact with this new field.&#10;Also used a Stream to generate each station.&#10;also simplified the GET for all stations as it now just returns the list.">
+      <option name="closed" value="true" />
+      <created>1792440803785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1792440803785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

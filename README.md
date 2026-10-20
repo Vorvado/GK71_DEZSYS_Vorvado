@@ -73,5 +73,5 @@ Expected response (JSON array of stations):
 - [x] Add a `POST /api/v1/stations` endpoint that accepts a JSON body and adds a new station to the (in-memory) list.
 
 ### Tasks 3
-- [ ] Add XML support: return XML instead of JSON when the client sends `Accept: application/xml`.
-- [ ] Integrate **Springdoc OpenAPI** (Swagger UI) to document your API.
+- [x] Add XML support: return XML instead of JSON when the client sends `Accept: application/xml`.
+- [x] Integrate **Springdoc OpenAPI** (Swagger UI) to document your API.

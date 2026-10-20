@@ -28,7 +28,7 @@ public class SimulationService {
     }
 
     public List<Station> generateStations() {
-        return stations;
+        return List.copyOf(stations);
     }
 
     public Station generateStation(int stationNum) {
