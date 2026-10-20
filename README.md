@@ -77,6 +77,6 @@ Expected response (JSON array of stations):
 - [x] Integrate **Springdoc OpenAPI** (Swagger UI) to document your API.
 
 ### Task 4
-- [ ] Fehler Abfangen und eigene Error Seite anzeigen
+- [x] Fehler Abfangen und eigene Error Seite anzeigen
 - [x] Web-Frontend erstellen/prompten
 - [x] Fragestellungen

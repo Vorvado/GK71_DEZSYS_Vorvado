@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce1b7660-faae-41aa-ae97-1764ec9db97f" name="Changes" comment="Implemented Auto-updating values for all stations">
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/floodmonitor/FloodMonitorApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/floodmonitor/FloodMonitorApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/floodmonitor/service/SimulationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/floodmonitor/service/SimulationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SimulationService.class.uniqueId1" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SimulationService.class.uniqueId1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/floodmonitor/service/SimulationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/floodmonitor/service/SimulationService.java" afterDir="false" />
+    <list default="true" id="ce1b7660-faae-41aa-ae97-1764ec9db97f" name="Changes" comment="Changed the webpage and backend to not refresh the site when updating the data instead just updating the html and js">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/error/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SimulationService.class.uniqueId1" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,61 +81,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0018363587043813" />
-      <entry key="MS500" value="1.4974147075227797" />
-      <entry key="S2" value="3.9093983804857535" />
-      <entry key="S5" value="6.460834926338232" />
-      <entry key="S10" value="8.528611753359575" />
-      <entry key="S30" value="11.592942814907598" />
-      <entry key="S60" value="14.03761410152705" />
-      <entry key="M2" value="24.564571157416932" />
-      <entry key="M5" value="87.36662943780563" />
-      <entry key="M10" value="195.27927247386052" />
-      <entry key="M15" value="275.1007760881443" />
-      <entry key="M30" value="423.96834788600484" />
-      <entry key="H1" value="587.0434364788832" />
-      <entry key="H2" value="741.7462480827649" />
-      <entry key="H4" value="857.6253097196624" />
-      <entry key="D1" value="985.1671513467521" />
-      <entry key="W1" value="1010.6384872467125" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.000000692777587" />
+      <entry key="S60" value="1.0039807997005663" />
+      <entry key="M2" value="1.434504161645302" />
+      <entry key="M5" value="12.064082293781404" />
+      <entry key="M10" value="57.51836592964315" />
+      <entry key="M15" value="118.14563397348668" />
+      <entry key="M30" value="282.6671269908639" />
+      <entry key="H1" value="495.00768286431185" />
+      <entry key="H2" value="704.7684637903118" />
+      <entry key="H4" value="865.5845688707941" />
+      <entry key="D1" value="1046.2082426249726" />
+      <entry key="W1" value="1082.7312073159858" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="5.221363547673879E-154" />
-      <entry key="S5" value="4.865344235666092E-62" />
-      <entry key="S10" value="2.2057525327348057E-31" />
-      <entry key="S30" value="6.042067816707148E-11" />
-      <entry key="S60" value="7.773073920082795E-6" />
-      <entry key="M2" value="0.002788023299776645" />
-      <entry key="M5" value="0.09509018042287139" />
-      <entry key="M10" value="0.3142315104461936" />
-      <entry key="M15" value="0.53731671154734" />
-      <entry key="M30" value="1.998706839179677" />
-      <entry key="H1" value="6.626697942917997" />
-      <entry key="H2" value="13.33460287916146" />
-      <entry key="H4" value="19.237172155957655" />
-      <entry key="D1" value="26.287393836964814" />
-      <entry key="W1" value="27.748317459976054" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="3.340145379708124E-157" />
+      <entry key="S10" value="5.779399086157705E-79" />
+      <entry key="S30" value="8.329665502790442E-27" />
+      <entry key="S60" value="9.126700117123592E-14" />
+      <entry key="M2" value="3.0210428856838153E-7" />
+      <entry key="M5" value="0.002466492890844109" />
+      <entry key="M10" value="0.050608309586418" />
+      <entry key="M15" value="0.15905417756154885" />
+      <entry key="M30" value="1.0874429064323896" />
+      <entry key="H1" value="4.887939908802816" />
+      <entry key="H2" value="11.45234514042626" />
+      <entry key="H4" value="17.82782664097705" />
+      <entry key="D1" value="25.956157070258172" />
+      <entry key="W1" value="27.698096273219246" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.06173997727251321" />
-      <entry key="MS500" value="1.0641005350232196" />
-      <entry key="S2" value="3.7738662882792804" />
-      <entry key="S5" value="6.402667396243934" />
-      <entry key="S10" value="8.495235274205305" />
-      <entry key="S30" value="11.551656875869003" />
-      <entry key="S60" value="13.994531311078527" />
-      <entry key="M2" value="24.531717462585515" />
-      <entry key="M5" value="87.43644059051941" />
-      <entry key="M10" value="195.57449303527454" />
-      <entry key="M15" value="275.6222838791187" />
-      <entry key="M30" value="425.95319262862273" />
-      <entry key="H1" value="593.6557353834028" />
-      <entry key="H2" value="755.0685878543959" />
-      <entry key="H4" value="876.8541762042437" />
-      <entry key="D1" value="1011.4527335248597" />
-      <entry key="W1" value="1038.386533319235" />
+      <entry key="MS100" value="0.9201876506248751" />
+      <entry key="MS500" value="0.9835020740262483" />
+      <entry key="S2" value="0.9958497530944581" />
+      <entry key="S5" value="0.9983378297043665" />
+      <entry key="S10" value="0.999168569213607" />
+      <entry key="S30" value="0.9997234705186836" />
+      <entry key="S60" value="1.0038354852569862" />
+      <entry key="M2" value="1.4341023414147205" />
+      <entry key="M5" value="12.063741240072806" />
+      <entry key="M10" value="57.56320209125797" />
+      <entry key="M15" value="118.29754548744332" />
+      <entry key="M30" value="283.74534818034516" />
+      <entry key="H1" value="499.88402077249503" />
+      <entry key="H2" value="716.2097466271115" />
+      <entry key="H4" value="883.4044227105863" />
+      <entry key="D1" value="1072.162563414841" />
+      <entry key="W1" value="1110.429025876651" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -136,6 +143,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3JzVSov7v7VptNLgH0QbwAPuFkf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -164,8 +174,10 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/oli/Nextcloud/Schule/SEW Projekte/GK71_DEZSYS_Floodmonitor",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
@@ -317,7 +329,8 @@
     <MESSAGE value="Tested XML support that spring comes with.&#10;Added Springdoc-openAPI documentation.&#10;http://localhost:8080/swagger-ui/index.html" />
     <MESSAGE value="Generated WEB interface using Github Copilot. pulls data from the REST API" />
     <MESSAGE value="Implemented Auto-updating values for all stations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Auto-updating values for all stations" />
+    <MESSAGE value="Changed the webpage and backend to not refresh the site when updating the data instead just updating the html and js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the webpage and backend to not refresh the site when updating the data instead just updating the html and js" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
